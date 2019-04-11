@@ -1,3 +1,7 @@
+<?php
+    require_once('header.php');    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,15 +9,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap 1 Template</title>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/font-awesome.css" />
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-  <link rel="stylesheet" href="css/style.css">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/font-awesome.css" />
+  <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- =======================================================
     Theme Name: Hidayah
@@ -22,8 +25,9 @@
     Author URL: https://bootstrapmade.com
   ======================================================= -->
 </head>
+
 <body>
-  <header>
+<header>
     <div class="main-menu">
       <div class="container">
         <div class="row">
@@ -37,6 +41,7 @@
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="php/registrer.php">Registration</a></li>
+                <li><a href="php/login.php">Login</a></li>
               </ul>
             </div>
           </div>
@@ -46,9 +51,10 @@
 
 
   </header>
+
   <section id="content">
     <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7850.274753646112!2d123.90288862429827!3d10.330889320499157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999218ad96ccd%3A0x73cd2c6cb520d2c!2z44K744OWIOOCu-ODliBJVCDjg5Hjg7zjgq8!5e0!3m2!1sja!2sph!4v1554885101303!5m2!1sja!2sph" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51862.588973987076!2d139.65759651965405!3d35.66686073044725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2z5pel5pys44CB5p2x5Lqs6YO95riL6LC35Yy6!5e0!3m2!1sja!2sph!4v1554785203636!5m2!1sja!2sph" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="container">
       <div class="row">
@@ -97,12 +103,7 @@
         <div class="col-sm-12 text-center">
           <p>Discover.inc</p>
           <div class="credits">
-            <!--
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Hidayah
-              -->
+
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>>
@@ -124,7 +125,6 @@
 </body>
 
 </html>
-
 
 <?php
 
@@ -161,5 +161,11 @@ if(isset($_POST['register'])){
         }
     }
 }
+
+?>
+
+
+<?php
+    require_once('footer.php');
 
 ?>

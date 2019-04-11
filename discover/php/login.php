@@ -17,20 +17,18 @@
                     <div class="form-group">
                         <label for="password" class="float-left">Password</label>
                         <input type="password" name="password" id="password" class="form-control">
-                    </div> 
+                    </div>
 
                     <div class="form-group">
                         <button type="submit" name="login" class="btn btn-dark btn-block">Log in</button>
                     </div>
                 </form>
                 <?php
-
-                require('connect.php');
                     if(isset($_POST['login'])){
-                        $user = $_POST['username'];
-                        $pass = $_POST['password'];
+                        $username = $_POST['username'];
+                        $password = $_POST['password'];
 
-                        $sql = "SELECT * FROM users WHERE username = '$user' AND password = '$pass'";
+                        $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
                         $query = mysqli_query($conn, $sql)or die(mysqli_error($conn));
 
                         if(mysqli_num_rows($query) == 1){

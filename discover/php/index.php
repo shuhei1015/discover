@@ -1,7 +1,7 @@
 <?php
     require_once('header.php');
     
-    if(!$_SESSION['user_id']){
+    if(!$_SESSION['userid']){
     header("location:login.php");
     }
 
@@ -15,7 +15,7 @@
             <div class="col-8">
                 <div class="row">
                 <div class="col-4"><br>
-                    <a href="buyitem.php" class="btn btn-secondary btn-block">Buy ticket</a>
+                    <a href="buyitem.php" class="btn btn-secondary btn-block">Buy Item</a>
                     </div>
                     <div class="col-4"><br>
                     <a href=" items.php" class="btn btn-secondary btn-block">Display Item Bought</a>
